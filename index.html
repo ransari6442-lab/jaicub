@@ -4,30 +4,70 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Jai Win Official Website</title>
+<title>JaiClub Premium Official Website</title>
 
 <style>
 body{
   margin:0;
   font-family:Arial;
-  background:#f4f6ff;
+  background:linear-gradient(135deg,#eef2ff,#f8fbff);
 }
 
+/* CONTAINER */
 .container{
   max-width:1100px;
   margin:auto;
-  padding:15px;
-}
-
-.section{
-  background:#fff;
   padding:20px;
-  border-radius:12px;
-  margin-bottom:20px;
-  box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
-h1,h2{
+/* HEADER */
+.header{
+  text-align:center;
+  padding:25px;
+  border-radius:20px;
+  color:#fff;
+  background:linear-gradient(135deg,#111,#333);
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.header img{
+  width:90px;
+  border-radius:50%;
+}
+
+/* GRID */
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+}
+
+/* CARD */
+.card{
+  width:300px;
+  padding:20px;
+  border-radius:18px;
+  color:#fff;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px) scale(1.03);
+}
+
+/* COLORS */
+.blue{background:linear-gradient(135deg,#2979ff,#1565c0);}
+.green{background:linear-gradient(135deg,#00c853,#64dd17);}
+.red{background:linear-gradient(135deg,#d32f2f,#b71c1c);}
+.purple{background:linear-gradient(135deg,#8e24aa,#6a1b9a);}
+.orange{background:linear-gradient(135deg,#ff9800,#ef6c00);}
+.dark{background:linear-gradient(135deg,#333,#000);}
+
+/* TITLE */
+.card h3{
+  margin-bottom:10px;
   text-align:center;
 }
 
@@ -35,72 +75,38 @@ h1,h2{
 .btn{
   display:block;
   text-align:center;
-  padding:12px;
-  margin:10px 0;
-  background:#005DFF;
-  color:#fff;
-  text-decoration:none;
+  margin-top:10px;
+  padding:10px;
+  background:#fff;
+  color:#000;
   border-radius:8px;
+  text-decoration:none;
   font-weight:bold;
+}
+
+/* LIST */
+ul{
+  font-size:14px;
+  line-height:1.6;
+  padding-left:18px;
 }
 
 /* GAME BOX */
-.game-box{
-  background:#fff;
-  padding:15px;
-  margin:10px 0;
+.game{
+  background:rgba(255,255,255,0.9);
+  color:#000;
+  padding:10px;
+  margin:8px 0;
   border-radius:10px;
-  box-shadow:0 3px 10px rgba(0,0,0,0.1);
   text-align:center;
   font-weight:bold;
 }
 
-/* HIGHLIGHT */
-.highlight-deposit{
-  background:linear-gradient(135deg,#00c853,#64dd17);
-  color:#fff;
-}
-
-.highlight-withdraw{
-  background:linear-gradient(135deg,#2979ff,#1565c0);
-  color:#fff;
-}
-
-/* TIPS */
-.tips-card{
-  background:linear-gradient(135deg,#fff,#f7f9ff);
-  padding:20px;
-  border-radius:15px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.1);
-}
-
-.tips-title{
+/* WINGO */
+.wingo{
   text-align:center;
-  color:#005DFF;
   font-weight:bold;
-  margin-bottom:10px;
-}
-
-.category{
-  margin-top:12px;
-  font-weight:bold;
-  color:#d32f2f;
-}
-
-.tips-list{
   font-size:14px;
-  line-height:1.6;
-}
-
-/* LOGO */
-.logo{
-  text-align:center;
-}
-
-.logo img{
-  width:100px;
-  height:100px;
-  border-radius:50%;
 }
 </style>
 
@@ -110,107 +116,118 @@ h1,h2{
 
 <div class="container">
 
-  <!-- LOGO -->
-  <div class="section logo">
+  <!-- HEADER -->
+  <div class="header">
     <img src="https://i.ibb.co/d4dFwb57/Whats-App-Image-2025-11-18-at-23-27-25-2a5745a3.jpg">
-    <h1>Jai Win Official Website</h1>
+    <h1>JaiClub Official Platform</h1>
+    <p>Welcome to JaiClub Premium Gaming Experience</p>
   </div>
 
-  <!-- LOGIN -->
-  <div class="section">
-    <h2>Login & Register</h2>
-    <a href="#" class="btn">Login</a>
-    <a href="#" class="btn">Register</a>
-  </div>
+  <!-- GRID -->
+  <div class="grid">
 
-  <!-- DEPOSIT -->
-  <div class="section highlight-deposit">
-    <h2>💰 Deposit</h2>
-    <p>Wallet → Add Money → UPI/Bank</p>
-  </div>
-
-  <!-- WITHDRAW -->
-  <div class="section highlight-withdraw">
-    <h2>💸 Withdraw</h2>
-    <p>Wallet → Enter Amount → Submit</p>
-  </div>
-
-  <!-- GAMES -->
-  <div class="section">
-    <h2>Games</h2>
-    <div class="game-box">🎰 Slots</div>
-    <div class="game-box">🎲 Casino</div>
-    <div class="game-box">✈️ Aviator</div>
-  </div>
-
-  <!-- WINGO -->
-  <div class="section">
-    <h2>🔴 WinGo</h2>
-    <p>Green: 1,3,7,9 | Red: 2,4,6,8 | Violet: 0,5</p>
-  </div>
-
-  <!-- BANK -->
-  <div class="section">
-    <h2>🏦 Bank Add</h2>
-    <p>Wallet → Add Bank → Enter Details → Verify OTP</p>
-  </div>
-
-  <!-- REFER -->
-  <div class="section">
-    <h2>🤝 Refer</h2>
-    <p>Invite friends & earn bonus</p>
-  </div>
-
-  <!-- GIFT -->
-  <div class="section">
-    <h2>🎁 Gift Code</h2>
-    <p>Enter code → Claim reward</p>
-  </div>
-
-  <!-- TRUST -->
-  <div class="section">
-    <h2>🔒 Trusted</h2>
-    <p>Secure system with OTP & fast withdrawal</p>
-  </div>
-
-  <!-- GUIDE  -->
-
-
-    <div class="tips-title">💡 GUIDE )</div>
-
-    <div class="category">🎯 Basic</div>
-    <div class="tips-list">
-      ✔ Start small<br>✔ Learn rules<br>✔ Stay patient<br>✔ Set limits<br>✔ Play calmly
+    <!-- LOGIN -->
+    <div class="card blue">
+      <h3>🔐 JaiClub Login & Register</h3>
+      <ul>
+        <li>Enter JaiClub mobile number</li>
+        <li>JaiClub OTP verification</li>
+        <li>Secure JaiClub access</li>
+      </ul>
+      <a href="#" class="btn">JaiClub Login</a>
     </div>
 
-    <div class="category">🧠 Strategy</div>
-    <div class="tips-list">
-      ✔ Use strategy<br>✔ Track results<br>✔ Avoid random bets<br>✔ Stay consistent<br>✔ Analyze patterns
+    <!-- DEPOSIT -->
+    <div class="card green">
+      <h3>💰 JaiClub Deposit</h3>
+      <ul>
+        <li>Go to JaiClub wallet</li>
+        <li>Add money to JaiClub account</li>
+        <li>Use UPI / Bank in JaiClub</li>
+        <li>Instant JaiClub update</li>
+      </ul>
     </div>
 
-    <div class="category">💰 Money</div>
-    <div class="tips-list">
-      ✔ Don’t invest all<br>✔ Withdraw profit<br>✔ Fixed betting<br>✔ Save money<br>✔ Avoid big risk
+    <!-- WITHDRAW -->
+    <div class="card red">
+      <h3>💸 JaiClub Withdraw</h3>
+      <ul>
+        <li>Enter JaiClub withdraw amount</li>
+        <li>Add JaiClub bank details</li>
+        <li>Submit JaiClub request</li>
+        <li>Fast JaiClub processing</li>
+      </ul>
     </div>
 
-    <div class="category">⚠️ Risk</div>
-    <div class="tips-list">
-      ✔ Don’t chase losses<br>✔ Stop after loss<br>✔ Avoid emotions<br>✔ Take breaks<br>✔ Play responsibly
+    <!-- GAMES -->
+    <div class="card purple">
+      <h3>🎮 JaiClub Games</h3>
+      <div class="game">🎰 JaiClub Slots</div>
+      <div class="game">🎲 JaiClub Casino</div>
+      <div class="game">✈️ JaiClub Aviator</div>
+      <div class="game">🔴 JaiClub WinGo</div>
     </div>
 
-    <div class="category">🔐 Safety</div>
-    <div class="tips-list">
-      ✔ Strong password<br>✔ Don’t share OTP<br>✔ Secure account<br>✔ Logout properly<br>✔ Use safe network
+    <!-- WINGO -->
+    <div class="card orange">
+      <h3>🔴 JaiClub WinGo</h3>
+      <div class="wingo">
+        JaiClub Green: 1,3,7,9<br>
+        JaiClub Red: 2,4,6,8<br>
+        JaiClub Violet: 0,5
+      </div>
     </div>
 
-    <div class="category">📊 Smart</div>
-    <div class="tips-list">
-      ✔ Observe trends<br>✔ Learn mistakes<br>✔ Stay disciplined<br>✔ Avoid overconfidence<br>✔ Focus properly
+    <!-- BANK -->
+    <div class="card blue">
+      <h3>🏦 JaiClub Bank Add</h3>
+      <ul>
+        <li>Add JaiClub bank account</li>
+        <li>JaiClub OTP verify</li>
+        <li>Secure JaiClub save</li>
+      </ul>
     </div>
 
-    <div class="category">🤝 Refer</div>
-    <div class="tips-list">
-      ✔ Share link<br>✔ Invite friends<br>✔ Earn bonus<br>✔ Build network<br>✔ Use offers wisely
+    <!-- REFER -->
+    <div class="card green">
+      <h3>🤝 JaiClub Refer</h3>
+      <ul>
+        <li>Invite to JaiClub</li>
+        <li>Earn JaiClub bonus</li>
+        <li>Get JaiClub rewards</li>
+      </ul>
+    </div>
+
+    <!-- GIFT -->
+    <div class="card orange">
+      <h3>🎁 JaiClub Gift Code</h3>
+      <ul>
+        <li>Enter JaiClub code</li>
+        <li>Claim JaiClub rewards</li>
+        <li>Instant JaiClub bonus</li>
+      </ul>
+    </div>
+
+    <!-- TRUST -->
+    <div class="card dark">
+      <h3>🔒 JaiClub Trusted</h3>
+      <ul>
+        <li>JaiClub secure system</li>
+        <li>JaiClub OTP protection</li>
+        <li>Fast JaiClub withdrawal</li>
+      </ul>
+    </div>
+
+    <!-- TIPS -->
+    <div class="card purple">
+      <h3>💡 JaiClub Tips</h3>
+      <ul>
+        <li>Start JaiClub with small amount</li>
+        <li>Set JaiClub limits</li>
+        <li>Avoid JaiClub loss chasing</li>
+        <li>Stay calm in JaiClub</li>
+        <li>Play smart on JaiClub</li>
+      </ul>
     </div>
 
   </div>
