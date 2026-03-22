@@ -2,202 +2,219 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Jai Club</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Jai Win Official Website</title>
 
 <style>
-
-body {
+body{
   margin:0;
-  font-family: Arial;
-  background:#111;
-  color:white;
+  font-family:Arial;
+  background:#f4f6ff;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:15px;
+}
+
+.section{
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:20px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1,h2{
   text-align:center;
 }
 
-header {
-  display:flex;
-  justify-content:space-between;
-  padding:15px 30px;
-  background:black;
-}
-
-header h1 {
-  color:gold;
-}
-
-nav a {
-  color:white;
-  margin:10px;
-  text-decoration:none;
-}
-
-/* HERO */
-.hero img {
-  width:80%;
-  max-width:500px;
-  border-radius:10px;
-}
-
-button {
-  padding:10px 20px;
-  background:gold;
-  border:none;
-  margin-top:10px;
-  cursor:pointer;
-}
-
-/* SECTION */
-.section {
-  padding:40px;
-}
-
-/* GUIDELINES */
-.guidelines {
-  background: linear-gradient(135deg, #1a1a1a, #222);
-  border-top:2px solid gold;
-  border-bottom:2px solid gold;
-}
-
-.guidelines h2 {
-  color:gold;
-}
-
-.guidelines p {
-  background:#000;
+/* BUTTON */
+.btn{
+  display:block;
+  text-align:center;
   padding:12px;
-  margin:10px auto;
-  width:80%;
-  border-left:5px solid gold;
-  border-radius:5px;
-}
-
-.guidelines b {
-  color:#00ffcc;
-}
-
-/* CARDS */
-.card {
-  background:#222;
-  margin:10px;
-  padding:20px;
-  border-radius:10px;
-  display:inline-block;
-  width:200px;
-}
-
-a.btn {
-  display:inline-block;
-  margin-top:10px;
-  padding:8px 15px;
-  background:gold;
-  color:black;
+  margin:10px 0;
+  background:#005DFF;
+  color:#fff;
   text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
 }
 
+/* GAME BOX */
+.game-box{
+  background:#fff;
+  padding:15px;
+  margin:10px 0;
+  border-radius:10px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+  text-align:center;
+  font-weight:bold;
+}
+
+/* HIGHLIGHT */
+.highlight-deposit{
+  background:linear-gradient(135deg,#00c853,#64dd17);
+  color:#fff;
+}
+
+.highlight-withdraw{
+  background:linear-gradient(135deg,#2979ff,#1565c0);
+  color:#fff;
+}
+
+/* TIPS */
+.tips-card{
+  background:linear-gradient(135deg,#fff,#f7f9ff);
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.tips-title{
+  text-align:center;
+  color:#005DFF;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.category{
+  margin-top:12px;
+  font-weight:bold;
+  color:#d32f2f;
+}
+
+.tips-list{
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* LOGO */
+.logo{
+  text-align:center;
+}
+
+.logo img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+}
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>Jai Club</h1>
-<nav>
-<a href="#home">Home</a>
-<a href="#register">Register</a>
-<a href="#deposit">Deposit</a>
-<a href="#withdraw">Withdraw</a>
-<a href="#games">Games</a>
-</nav>
-</header>
+<div class="container">
 
-<!-- HERO -->
-<div class="section hero" id="home">
-<img src="https://images.unsplash.com/photo-1517649763962-0c623066013b">
-<h2>Welcome to Jai Club</h2>
-<p>Play Smart | Stay Safe</p>
-</div>
+  <!-- LOGO -->
+  <div class="section logo">
+    <img src="https://i.ibb.co/d4dFwb57/Whats-App-Image-2025-11-18-at-23-27-25-2a5745a3.jpg">
+    <h1>Jai Win Official Website</h1>
+  </div>
 
-<!-- GUIDELINES -->
-<div class="section guidelines">
-<h2>📌 Important Guidelines</h2>
+  <!-- LOGIN -->
+  <div class="section">
+    <h2>Login & Register</h2>
+    <a href="#" class="btn">Login</a>
+    <a href="#" class="btn">Register</a>
+  </div>
 
-<p><b>✔ Use Secure Payments:</b> Always use trusted and verified payment methods.</p>
+  <!-- DEPOSIT -->
+  <div class="section highlight-deposit">
+    <h2>💰 Deposit</h2>
+    <p>Wallet → Add Money → UPI/Bank</p>
+  </div>
 
-<p><b>✔ Keep Your Account Safe:</b> Never share your OTP, password or personal details.</p>
+  <!-- WITHDRAW -->
+  <div class="section highlight-withdraw">
+    <h2>💸 Withdraw</h2>
+    <p>Wallet → Enter Amount → Submit</p>
+  </div>
 
-<p><b>✔ Play Responsibly:</b> Set limits and avoid over spending.</p>
+  <!-- GAMES -->
+  <div class="section">
+    <h2>Games</h2>
+    <div class="game-box">🎰 Slots</div>
+    <div class="game-box">🎲 Casino</div>
+    <div class="game-box">✈️ Aviator</div>
+  </div>
 
-<p><b>✔ Verify Before Withdraw:</b> Complete account verification before withdrawal.</p>
+  <!-- WINGO -->
+  <div class="section">
+    <h2>🔴 WinGo</h2>
+    <p>Green: 1,3,7,9 | Red: 2,4,6,8 | Violet: 0,5</p>
+  </div>
 
-<p><b>✔ Avoid Fake Links:</b> Do not trust unknown offers or suspicious links.</p>
+  <!-- BANK -->
+  <div class="section">
+    <h2>🏦 Bank Add</h2>
+    <p>Wallet → Add Bank → Enter Details → Verify OTP</p>
+  </div>
 
-</div>
+  <!-- REFER -->
+  <div class="section">
+    <h2>🤝 Refer</h2>
+    <p>Invite friends & earn bonus</p>
+  </div>
 
-<!-- REGISTER -->
-<div class="section" id="register">
-<h2>Register</h2>
-<input placeholder="Name"><br><br>
-<input placeholder="Email"><br><br>
-<input type="password" placeholder="Password"><br><br>
-<button onclick="alert('Registered Successfully')">Register</button>
-</div>
+  <!-- GIFT -->
+  <div class="section">
+    <h2>🎁 Gift Code</h2>
+    <p>Enter code → Claim reward</p>
+  </div>
 
-<!-- DEPOSIT -->
-<div class="section" id="deposit">
-<h2>Deposit Tips</h2>
-<p>✔ Start with small amount</p>
-<p>✔ Use trusted payment methods</p>
-<p>✔ Check offers carefully</p>
-</div>
+  <!-- TRUST -->
+  <div class="section">
+    <h2>🔒 Trusted</h2>
+    <p>Secure system with OTP & fast withdrawal</p>
+  </div>
 
-<!-- WITHDRAW -->
-<div class="section" id="withdraw">
-<h2>Withdraw Tips</h2>
-<p>✔ Verify your account first</p>
-<p>✔ Use same payment method</p>
-<p>✔ Check minimum limits</p>
-</div>
+  <!-- GUIDE  -->
 
-<!-- GAMES -->
-<div class="section" id="games">
-<h2>🎮 Games</h2>
 
-<div class="card">
-<h3>🎰 Slot</h3>
-<a class="btn" onclick="alert('You Win 🎉')">Play</a>
-</div>
+    <div class="tips-title">💡 40 Tips (All Categories)</div>
 
-<div class="card">
-<h3>🎲 Casino</h3>
-<a class="btn" onclick="alert('Dice: 6 🎉')">Play</a>
-</div>
+    <div class="category">🎯 Basic</div>
+    <div class="tips-list">
+      ✔ Start small<br>✔ Learn rules<br>✔ Stay patient<br>✔ Set limits<br>✔ Play calmly
+    </div>
 
-<div class="card">
-<h3>🟢 Wingo</h3>
-<a class="btn" onclick="alert('Result: Green')">Play</a>
-</div>
+    <div class="category">🧠 Strategy</div>
+    <div class="tips-list">
+      ✔ Use strategy<br>✔ Track results<br>✔ Avoid random bets<br>✔ Stay consistent<br>✔ Analyze patterns
+    </div>
 
-<div class="card">
-<h3>🔫 PUBG</h3>
-<a class="btn" onclick="alert('Winner Winner Chicken Dinner 🐔')">Play</a>
-</div>
+    <div class="category">💰 Money</div>
+    <div class="tips-list">
+      ✔ Don’t invest all<br>✔ Withdraw profit<br>✔ Fixed betting<br>✔ Save money<br>✔ Avoid big risk
+    </div>
 
-<div class="card">
-<h3>🐔 Chicken Road</h3>
-<a class="btn" onclick="alert('Safe Cross ✅')">Play</a>
-</div>
+    <div class="category">⚠️ Risk</div>
+    <div class="tips-list">
+      ✔ Don’t chase losses<br>✔ Stop after loss<br>✔ Avoid emotions<br>✔ Take breaks<br>✔ Play responsibly
+    </div>
 
-<div class="card">
-<h3>✈️ Aviator</h3>
-<a class="btn" onclick="alert('Crashed at 2.3x')">Play</a>
-</div>
+    <div class="category">🔐 Safety</div>
+    <div class="tips-list">
+      ✔ Strong password<br>✔ Don’t share OTP<br>✔ Secure account<br>✔ Logout properly<br>✔ Use safe network
+    </div>
 
-</div>
+    <div class="category">📊 Smart</div>
+    <div class="tips-list">
+      ✔ Observe trends<br>✔ Learn mistakes<br>✔ Stay disciplined<br>✔ Avoid overconfidence<br>✔ Focus properly
+    </div>
 
-<!-- FOOTER -->
-<div class="section">
-<p>© 2026 Jai Club | All Rights Reserved</p>
+    <div class="category">🤝 Refer</div>
+    <div class="tips-list">
+      ✔ Share link<br>✔ Invite friends<br>✔ Earn bonus<br>✔ Build network<br>✔ Use offers wisely
+    </div>
+
+  </div>
+
 </div>
 
 </body>
