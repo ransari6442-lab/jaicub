@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jai Club</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+  margin:0;
+  font-family: Arial;
+  background:#111;
+  color:white;
+  text-align:center;
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  background:black;
+}
+
+header h1 {
+  color:gold;
+}
+
+nav a {
+  color:white;
+  margin:10px;
+  text-decoration:none;
+}
+
+/* HERO */
+.hero img {
+  width:80%;
+  max-width:500px;
+  border-radius:10px;
+}
+
+button {
+  padding:10px 20px;
+  background:gold;
+  border:none;
+  margin-top:10px;
+  cursor:pointer;
+}
+
+/* SECTION */
+.section {
+  padding:40px;
+}
+
+/* GUIDELINES */
+.guidelines {
+  background: linear-gradient(135deg, #1a1a1a, #222);
+  border-top:2px solid gold;
+  border-bottom:2px solid gold;
+}
+
+.guidelines h2 {
+  color:gold;
+}
+
+.guidelines p {
+  background:#000;
+  padding:12px;
+  margin:10px auto;
+  width:80%;
+  border-left:5px solid gold;
+  border-radius:5px;
+}
+
+.guidelines b {
+  color:#00ffcc;
+}
+
+/* CARDS */
+.card {
+  background:#222;
+  margin:10px;
+  padding:20px;
+  border-radius:10px;
+  display:inline-block;
+  width:200px;
+}
+
+a.btn {
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 15px;
+  background:gold;
+  color:black;
+  text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Jai Club</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#register">Register</a>
+<a href="#deposit">Deposit</a>
+<a href="#withdraw">Withdraw</a>
+<a href="#games">Games</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<div class="section hero" id="home">
+<img src="https://images.unsplash.com/photo-1517649763962-0c623066013b">
+<h2>Welcome to Jai Club</h2>
+<p>Play Smart | Stay Safe</p>
+</div>
+
+<!-- GUIDELINES -->
+<div class="section guidelines">
+<h2>📌 Important Guidelines</h2>
+
+<p><b>✔ Use Secure Payments:</b> Always use trusted and verified payment methods.</p>
+
+<p><b>✔ Keep Your Account Safe:</b> Never share your OTP, password or personal details.</p>
+
+<p><b>✔ Play Responsibly:</b> Set limits and avoid over spending.</p>
+
+<p><b>✔ Verify Before Withdraw:</b> Complete account verification before withdrawal.</p>
+
+<p><b>✔ Avoid Fake Links:</b> Do not trust unknown offers or suspicious links.</p>
+
+</div>
+
+<!-- REGISTER -->
+<div class="section" id="register">
+<h2>Register</h2>
+<input placeholder="Name"><br><br>
+<input placeholder="Email"><br><br>
+<input type="password" placeholder="Password"><br><br>
+<button onclick="alert('Registered Successfully')">Register</button>
+</div>
+
+<!-- DEPOSIT -->
+<div class="section" id="deposit">
+<h2>Deposit Tips</h2>
+<p>✔ Start with small amount</p>
+<p>✔ Use trusted payment methods</p>
+<p>✔ Check offers carefully</p>
+</div>
+
+<!-- WITHDRAW -->
+<div class="section" id="withdraw">
+<h2>Withdraw Tips</h2>
+<p>✔ Verify your account first</p>
+<p>✔ Use same payment method</p>
+<p>✔ Check minimum limits</p>
+</div>
+
+<!-- GAMES -->
+<div class="section" id="games">
+<h2>🎮 Games</h2>
+
+<div class="card">
+<h3>🎰 Slot</h3>
+<a class="btn" onclick="alert('You Win 🎉')">Play</a>
+</div>
+
+<div class="card">
+<h3>🎲 Casino</h3>
+<a class="btn" onclick="alert('Dice: 6 🎉')">Play</a>
+</div>
+
+<div class="card">
+<h3>🟢 Wingo</h3>
+<a class="btn" onclick="alert('Result: Green')">Play</a>
+</div>
+
+<div class="card">
+<h3>🔫 PUBG</h3>
+<a class="btn" onclick="alert('Winner Winner Chicken Dinner 🐔')">Play</a>
+</div>
+
+<div class="card">
+<h3>🐔 Chicken Road</h3>
+<a class="btn" onclick="alert('Safe Cross ✅')">Play</a>
+</div>
+
+<div class="card">
+<h3>✈️ Aviator</h3>
+<a class="btn" onclick="alert('Crashed at 2.3x')">Play</a>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="section">
+<p>© 2026 Jai Club | All Rights Reserved</p>
+</div>
+
+</body>
+</html>
