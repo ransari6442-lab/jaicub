@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>JaiWin Premium Official</title>
 
 <style>
@@ -99,6 +98,29 @@ function toggleAccordion(id){
   let content=document.getElementById(id);
   content.style.display = content.style.display === "block" ? "none" : "block";
 }
+
+window.onload = function(){
+  let tipsBox = document.getElementById("tipsList");
+
+  const tips = [
+    "Always use a strong password.",
+    "Never share OTP with anyone.",
+    "Check your internet connection.",
+    "Avoid public WiFi for security.",
+    "Keep your device updated.",
+    "Refresh if page is stuck.",
+    "Contact support if needed.",
+    "Log out after use.",
+    "Double-check details before submitting.",
+    "Stay calm and patient."
+  ];
+
+  for(let i=1; i<=500; i++){
+    let li = document.createElement("li");
+    li.innerText = "Tip " + i + ": " + tips[i % tips.length];
+    tipsBox.appendChild(li);
+  }
+}
 </script>
 
 </head>
@@ -111,74 +133,66 @@ function toggleAccordion(id){
 <div class="header">
   <img src="https://i.ibb.co/d4dFwb57/Whats-App-Image-2025-11-18-at-23-27-25-2a5745a3.jpg">
   <h1>JaiWin Official Platform</h1>
-  <p>Play Smart • Win Big • Earn Daily</p>
+  <p>Play Smart • Stay Safe • Enjoy</p>
 
   <a href="#" class="btn login-btn">🔐 Login</a>
   <a href="#" class="btn register-btn">📝 Register</a>
 </div>
 
-<!-- ACCORDION CONTENT -->
+<!-- ACCORDION -->
 <div class="accordion">
 
-<!-- ABOUT -->
 <div class="accordion-item">
-  <div class="accordion-header c1" onclick="toggleAccordion('a1')">🔥 About JaiWin</div>
+  <div class="accordion-header c1" onclick="toggleAccordion('a1')">🔥 About</div>
   <div class="accordion-content" id="a1">
-    JaiWin delivers an unmatched gaming experience with high payouts and smooth gameplay.
+    JaiWin is a modern platform designed for entertainment and fun experience.
   </div>
 </div>
 
-<!-- FEATURES -->
 <div class="accordion-item">
   <div class="accordion-header c2" onclick="toggleAccordion('a2')">🎮 Features</div>
   <div class="accordion-content" id="a2">
-    ✔ Color Prediction<br>
-    ✔ Mini Games<br>
-    ✔ Lottery Games<br>
-    ✔ Daily Bonus & Rewards
+    ✔ Interactive UI<br>
+    ✔ Smooth Experience<br>
+    ✔ Daily Updates
   </div>
 </div>
 
-<!-- REQUIREMENTS -->
 <div class="accordion-item">
-  <div class="accordion-header c3" onclick="toggleAccordion('a3')">📋 Requirements</div>
+  <div class="accordion-header c3" onclick="toggleAccordion('a3')">📋 Info</div>
   <div class="accordion-content" id="a3">
-    Indian Mobile Number Required<br>
-    Bank Account for Withdraw
+    Use this platform responsibly and enjoy its features.
   </div>
 </div>
 
-<!-- LOGIN -->
 <div class="accordion-item">
   <div class="accordion-header c4" onclick="toggleAccordion('a4')">🔐 Login Guide</div>
   <div class="accordion-content" id="a4">
-    Visit website → Enter mobile → Password → Login
+    Enter credentials → Login → Access dashboard
   </div>
 </div>
 
-<!-- REGISTER -->
 <div class="accordion-item">
   <div class="accordion-header c5" onclick="toggleAccordion('a5')">📝 Registration</div>
   <div class="accordion-content" id="a5">
-    Enter number → Set password → OTP verify → Done
+    Enter details → Verify → Create account
   </div>
 </div>
 
-<!-- BONUS -->
 <div class="accordion-item">
-  <div class="accordion-header c2" onclick="toggleAccordion('a6')">🎁 Bonus</div>
+  <div class="accordion-header c6" onclick="toggleAccordion('a6')">❓ FAQs</div>
   <div class="accordion-content" id="a6">
-    Signup Bonus + Deposit Bonus + Cashback Offers
+    ✔ Easy to use<br>
+    ✔ Secure access<br>
+    ✔ Responsive design
   </div>
 </div>
 
-<!-- FAQ -->
+<!-- TIPS -->
 <div class="accordion-item">
-  <div class="accordion-header c6" onclick="toggleAccordion('a7')">❓ FAQs</div>
-  <div class="accordion-content" id="a7">
-    ✔ Free to join<br>
-    ✔ Real earning possible<br>
-    ✔ 24/7 Support
+  <div class="accordion-header c1" onclick="toggleAccordion('tips')">💡 500 Tips</div>
+  <div class="accordion-content" id="tips" style="max-height:300px;overflow:auto;">
+    <ul id="tipsList"></ul>
   </div>
 </div>
 
