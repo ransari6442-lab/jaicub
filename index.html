@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JaiWin Premium Official</title>
+
+<title>JaiClub Official</title>
 
 <style>
 body{
@@ -91,6 +92,14 @@ body{
 .c5{background:#d32f2f;}
 .c6{background:#333;}
 
+/* TIP STYLE */
+#tipsList li{
+  margin:6px 0;
+  padding:8px;
+  background:#f1f5ff;
+  border-radius:8px;
+}
+
 </style>
 
 <script>
@@ -103,21 +112,31 @@ window.onload = function(){
   let tipsBox = document.getElementById("tipsList");
 
   const tips = [
-    "Always use a strong password.",
-    "Never share OTP with anyone.",
-    "Check your internet connection.",
-    "Avoid public WiFi for security.",
-    "Keep your device updated.",
-    "Refresh if page is stuck.",
-    "Contact support if needed.",
-    "Log out after use.",
-    "Double-check details before submitting.",
-    "Stay calm and patient."
+    "Always use a strong password in JaiClub.",
+    "Never share OTP with anyone in JaiClub.",
+    "Check internet before using JaiClub.",
+    "Use JaiClub with stable network.",
+    "Avoid public WiFi while using JaiClub.",
+    "Keep your JaiClub account secure.",
+    "Update your JaiClub browser/app.",
+    "If slow, refresh JaiClub page.",
+    "Contact JaiClub support if needed.",
+    "Logout from JaiClub after use.",
+    "Double-check details in JaiClub.",
+    "Stay calm while using JaiClub.",
+    "Use JaiClub responsibly.",
+    "Follow JaiClub rules properly.",
+    "Avoid multiple logins in JaiClub.",
+    "Clear cache if JaiClub not loading.",
+    "Do not share JaiClub account.",
+    "Use official JaiClub site only.",
+    "Keep JaiClub password safe.",
+    "Enjoy safe usage of JaiClub."
   ];
 
   for(let i=1; i<=500; i++){
     let li = document.createElement("li");
-    li.innerText = "Tip " + i + ": " + tips[i % tips.length];
+    li.innerText = "JaiClub Tip " + i + ": " + tips[i % tips.length];
     tipsBox.appendChild(li);
   }
 }
@@ -132,7 +151,7 @@ window.onload = function(){
 <!-- HEADER -->
 <div class="header">
   <img src="https://i.ibb.co/d4dFwb57/Whats-App-Image-2025-11-18-at-23-27-25-2a5745a3.jpg">
-  <h1>JaiWin Official Platform</h1>
+  <h1>JaiClub Official</h1>
   <p>Play Smart • Stay Safe • Enjoy</p>
 
   <a href="#" class="btn login-btn">🔐 Login</a>
@@ -140,35 +159,36 @@ window.onload = function(){
 </div>
 
 <!-- ACCORDION -->
+
 <div class="accordion">
 
 <div class="accordion-item">
   <div class="accordion-header c1" onclick="toggleAccordion('a1')">🔥 About</div>
   <div class="accordion-content" id="a1">
-    JaiWin is a modern platform designed for entertainment and fun experience.
+    JaiClub is a modern platform designed for safe and smooth user experience.
   </div>
 </div>
 
 <div class="accordion-item">
   <div class="accordion-header c2" onclick="toggleAccordion('a2')">🎮 Features</div>
   <div class="accordion-content" id="a2">
-    ✔ Interactive UI<br>
-    ✔ Smooth Experience<br>
-    ✔ Daily Updates
+    ✔ Fast UI<br>
+    ✔ Easy Navigation<br>
+    ✔ Secure Access
   </div>
 </div>
 
 <div class="accordion-item">
   <div class="accordion-header c3" onclick="toggleAccordion('a3')">📋 Info</div>
   <div class="accordion-content" id="a3">
-    Use this platform responsibly and enjoy its features.
+    Use JaiClub responsibly and follow all guidelines.
   </div>
 </div>
 
 <div class="accordion-item">
   <div class="accordion-header c4" onclick="toggleAccordion('a4')">🔐 Login Guide</div>
   <div class="accordion-content" id="a4">
-    Enter credentials → Login → Access dashboard
+    Enter details → Login → Access your account
   </div>
 </div>
 
@@ -183,14 +203,14 @@ window.onload = function(){
   <div class="accordion-header c6" onclick="toggleAccordion('a6')">❓ FAQs</div>
   <div class="accordion-content" id="a6">
     ✔ Easy to use<br>
-    ✔ Secure access<br>
-    ✔ Responsive design
+    ✔ Secure platform<br>
+    ✔ 24/7 availability
   </div>
 </div>
 
 <!-- TIPS -->
 <div class="accordion-item">
-  <div class="accordion-header c1" onclick="toggleAccordion('tips')">💡 500 Tips</div>
+  <div class="accordion-header c1" onclick="toggleAccordion('tips')">💡 500 JaiClub Tips</div>
   <div class="accordion-content" id="tips" style="max-height:300px;overflow:auto;">
     <ul id="tipsList"></ul>
   </div>
