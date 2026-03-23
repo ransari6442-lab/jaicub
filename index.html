@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>JaiClub Premium Official Website</title>
+<title>JaiWin Premium Official</title>
 
 <style>
 body{
@@ -13,7 +13,6 @@ body{
   background:linear-gradient(135deg,#eef2ff,#f8fbff);
 }
 
-/* CONTAINER */
 .container{
   max-width:1100px;
   margin:auto;
@@ -23,11 +22,10 @@ body{
 /* HEADER */
 .header{
   text-align:center;
-  padding:25px;
+  padding:30px;
   border-radius:20px;
   color:#fff;
   background:linear-gradient(135deg,#111,#333);
-  box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 .header img{
@@ -35,80 +33,73 @@ body{
   border-radius:50%;
 }
 
-/* GRID */
-.grid{
-  display:flex;
-  flex-wrap:wrap;
-  gap:20px;
-  justify-content:center;
-}
-
-/* CARD */
-.card{
-  width:300px;
-  padding:20px;
-  border-radius:18px;
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  margin:8px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:bold;
   color:#fff;
-  box-shadow:0 10px 25px rgba(0,0,0,0.2);
-  transition:0.3s;
 }
 
-.card:hover{
-  transform:translateY(-8px) scale(1.03);
+.login-btn{
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
+}
+
+.register-btn{
+  background:linear-gradient(135deg,#ff9800,#ff5722);
+  animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.08);}
+  100%{transform:scale(1);}
+}
+
+/* ACCORDION */
+.accordion{
+  margin-top:20px;
+}
+
+.accordion-item{
+  margin-bottom:12px;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.accordion-header{
+  padding:15px;
+  font-weight:bold;
+  cursor:pointer;
+  color:#fff;
+}
+
+.accordion-content{
+  display:none;
+  padding:15px;
+  background:#fff;
+  color:#000;
 }
 
 /* COLORS */
-.blue{background:linear-gradient(135deg,#2979ff,#1565c0);}
-.green{background:linear-gradient(135deg,#00c853,#64dd17);}
-.red{background:linear-gradient(135deg,#d32f2f,#b71c1c);}
-.purple{background:linear-gradient(135deg,#8e24aa,#6a1b9a);}
-.orange{background:linear-gradient(135deg,#ff9800,#ef6c00);}
-.dark{background:linear-gradient(135deg,#333,#000);}
+.c1{background:#2979ff;}
+.c2{background:#00c853;}
+.c3{background:#ff9800;}
+.c4{background:#8e24aa;}
+.c5{background:#d32f2f;}
+.c6{background:#333;}
 
-/* TITLE */
-.card h3{
-  margin-bottom:10px;
-  text-align:center;
-}
-
-/* BUTTON */
-.btn{
-  display:block;
-  text-align:center;
-  margin-top:10px;
-  padding:10px;
-  background:#fff;
-  color:#000;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-/* LIST */
-ul{
-  font-size:14px;
-  line-height:1.6;
-  padding-left:18px;
-}
-
-/* GAME BOX */
-.game{
-  background:rgba(255,255,255,0.9);
-  color:#000;
-  padding:10px;
-  margin:8px 0;
-  border-radius:10px;
-  text-align:center;
-  font-weight:bold;
-}
-
-/* WINGO */
-.wingo{
-  text-align:center;
-  font-weight:bold;
-  font-size:14px;
-}
 </style>
+
+<script>
+function toggleAccordion(id){
+  let content=document.getElementById(id);
+  content.style.display = content.style.display === "block" ? "none" : "block";
+}
+</script>
 
 </head>
 
@@ -116,121 +107,82 @@ ul{
 
 <div class="container">
 
-  <!-- HEADER -->
-  <div class="header">
-    <img src="https://i.ibb.co/d4dFwb57/Whats-App-Image-2025-11-18-at-23-27-25-2a5745a3.jpg">
-    <h1>JaiClub Official Platform</h1>
-    <p>Welcome to JaiClub Premium Gaming Experience</p>
+<!-- HEADER -->
+<div class="header">
+  <img src="https://i.ibb.co/d4dFwb57/Whats-App-Image-2025-11-18-at-23-27-25-2a5745a3.jpg">
+  <h1>JaiWin Official Platform</h1>
+  <p>Play Smart • Win Big • Earn Daily</p>
+
+  <a href="#" class="btn login-btn">🔐 Login</a>
+  <a href="#" class="btn register-btn">📝 Register</a>
+</div>
+
+<!-- ACCORDION CONTENT -->
+<div class="accordion">
+
+<!-- ABOUT -->
+<div class="accordion-item">
+  <div class="accordion-header c1" onclick="toggleAccordion('a1')">🔥 About JaiWin</div>
+  <div class="accordion-content" id="a1">
+    JaiWin delivers an unmatched gaming experience with high payouts and smooth gameplay.
   </div>
+</div>
 
-  <!-- GRID -->
-  <div class="grid">
-
-    <!-- LOGIN -->
-    <div class="card blue">
-      <h3>🔐 JaiClub Login & Register</h3>
-      <ul>
-        <li>Enter JaiClub mobile number</li>
-        <li>JaiClub OTP verification</li>
-        <li>Secure JaiClub access</li>
-      </ul>
-      <a href="#" class="btn">JaiClub Login</a>
-    </div>
-
-    <!-- DEPOSIT -->
-    <div class="card green">
-      <h3>💰 JaiClub Deposit</h3>
-      <ul>
-        <li>Go to JaiClub wallet</li>
-        <li>Add money to JaiClub account</li>
-        <li>Use UPI / Bank in JaiClub</li>
-        <li>Instant JaiClub update</li>
-      </ul>
-    </div>
-
-    <!-- WITHDRAW -->
-    <div class="card red">
-      <h3>💸 JaiClub Withdraw</h3>
-      <ul>
-        <li>Enter JaiClub withdraw amount</li>
-        <li>Add JaiClub bank details</li>
-        <li>Submit JaiClub request</li>
-        <li>Fast JaiClub processing</li>
-      </ul>
-    </div>
-
-    <!-- GAMES -->
-    <div class="card purple">
-      <h3>🎮 JaiClub Games</h3>
-      <div class="game">🎰 JaiClub Slots</div>
-      <div class="game">🎲 JaiClub Casino</div>
-      <div class="game">✈️ JaiClub Aviator</div>
-      <div class="game">🔴 JaiClub WinGo</div>
-    </div>
-
-    <!-- WINGO -->
-    <div class="card orange">
-      <h3>🔴 JaiClub WinGo</h3>
-      <div class="wingo">
-        JaiClub Green: 1,3,7,9<br>
-        JaiClub Red: 2,4,6,8<br>
-        JaiClub Violet: 0,5
-      </div>
-    </div>
-
-    <!-- BANK -->
-    <div class="card blue">
-      <h3>🏦 JaiClub Bank Add</h3>
-      <ul>
-        <li>Add JaiClub bank account</li>
-        <li>JaiClub OTP verify</li>
-        <li>Secure JaiClub save</li>
-      </ul>
-    </div>
-
-    <!-- REFER -->
-    <div class="card green">
-      <h3>🤝 JaiClub Refer</h3>
-      <ul>
-        <li>Invite to JaiClub</li>
-        <li>Earn JaiClub bonus</li>
-        <li>Get JaiClub rewards</li>
-      </ul>
-    </div>
-
-    <!-- GIFT -->
-    <div class="card orange">
-      <h3>🎁 JaiClub Gift Code</h3>
-      <ul>
-        <li>Enter JaiClub code</li>
-        <li>Claim JaiClub rewards</li>
-        <li>Instant JaiClub bonus</li>
-      </ul>
-    </div>
-
-    <!-- TRUST -->
-    <div class="card dark">
-      <h3>🔒 JaiClub Trusted</h3>
-      <ul>
-        <li>JaiClub secure system</li>
-        <li>JaiClub OTP protection</li>
-        <li>Fast JaiClub withdrawal</li>
-      </ul>
-    </div>
-
-    <!-- TIPS -->
-    <div class="card purple">
-      <h3>💡 JaiClub Tips</h3>
-      <ul>
-        <li>Start JaiClub with small amount</li>
-        <li>Set JaiClub limits</li>
-        <li>Avoid JaiClub loss chasing</li>
-        <li>Stay calm in JaiClub</li>
-        <li>Play smart on JaiClub</li>
-      </ul>
-    </div>
-
+<!-- FEATURES -->
+<div class="accordion-item">
+  <div class="accordion-header c2" onclick="toggleAccordion('a2')">🎮 Features</div>
+  <div class="accordion-content" id="a2">
+    ✔ Color Prediction<br>
+    ✔ Mini Games<br>
+    ✔ Lottery Games<br>
+    ✔ Daily Bonus & Rewards
   </div>
+</div>
+
+<!-- REQUIREMENTS -->
+<div class="accordion-item">
+  <div class="accordion-header c3" onclick="toggleAccordion('a3')">📋 Requirements</div>
+  <div class="accordion-content" id="a3">
+    Indian Mobile Number Required<br>
+    Bank Account for Withdraw
+  </div>
+</div>
+
+<!-- LOGIN -->
+<div class="accordion-item">
+  <div class="accordion-header c4" onclick="toggleAccordion('a4')">🔐 Login Guide</div>
+  <div class="accordion-content" id="a4">
+    Visit website → Enter mobile → Password → Login
+  </div>
+</div>
+
+<!-- REGISTER -->
+<div class="accordion-item">
+  <div class="accordion-header c5" onclick="toggleAccordion('a5')">📝 Registration</div>
+  <div class="accordion-content" id="a5">
+    Enter number → Set password → OTP verify → Done
+  </div>
+</div>
+
+<!-- BONUS -->
+<div class="accordion-item">
+  <div class="accordion-header c2" onclick="toggleAccordion('a6')">🎁 Bonus</div>
+  <div class="accordion-content" id="a6">
+    Signup Bonus + Deposit Bonus + Cashback Offers
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="accordion-item">
+  <div class="accordion-header c6" onclick="toggleAccordion('a7')">❓ FAQs</div>
+  <div class="accordion-content" id="a7">
+    ✔ Free to join<br>
+    ✔ Real earning possible<br>
+    ✔ 24/7 Support
+  </div>
+</div>
+
+</div>
 
 </div>
 
